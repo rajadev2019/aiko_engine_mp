@@ -1,0 +1,2 @@
+put demo.py
+exec exec(open('demo.py').read(), {'__name__': '__main__'})

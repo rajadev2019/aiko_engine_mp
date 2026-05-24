@@ -1,0 +1,2 @@
+cat main.py
+exec print('mpfshell-ok', __import__('esp32').hall_sensor())

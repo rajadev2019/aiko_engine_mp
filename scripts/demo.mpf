@@ -1,0 +1,2 @@
+exec print("### Demo: update configuration/main.py ###")
+put configuration/main.py

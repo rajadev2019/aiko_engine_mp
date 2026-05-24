@@ -1,7 +1,7 @@
 # configuration/main.py: version: 2023-02-04 07:00 v06
 
 settings = {
-# "application":     "applications/default",  # Application to run
+  "application":     "applications/default",  # LED color-cycle demo
 # "application":     "applications/joysticks",
 # "application":     "applications/led_strip",
 # "application":     "applications/nodebots",
@@ -15,10 +15,10 @@ settings = {
 
   "denye_pins":       [12, 14],  # If touch_pins pressed, don't run "main.py"
 # "denye_pins":       [12, 13],  # If touch_pins pressed, don't run "main.py"
-  "led_enabled":      False,     # WS2812B LEDs attached
+  "led_enabled":      True,      # WS2812B LEDs attached (8-LED strip on GPIO 13)
   "logger_enabled":   False,     # Display everyone's log output
-  "oled_enabled":     True,      # OLED attached
-  "services_enabled": True       # Use Aiko Services infrastructure
+  "oled_enabled":     False,     # Off for generic ESP32 demo (enable for SwagBadge/OLED boards)
+  "services_enabled": False      # Standalone demo (no Aiko Services cloud)
 }
 
 def parameter(name, settings=settings):

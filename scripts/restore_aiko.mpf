@@ -1,0 +1,4 @@
+exec print("### Restore full Aiko main.py and redeploy ###")
+put main.py
+put configuration/main.py
+put applications/default.py

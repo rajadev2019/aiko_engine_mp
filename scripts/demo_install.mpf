@@ -1,0 +1,5 @@
+put demo.py
+put main_demo.py
+exec import os
+exec os.path.exists('main.py') and os.rename('main.py','main.py.orig')
+exec os.rename('main_demo.py','main.py')
